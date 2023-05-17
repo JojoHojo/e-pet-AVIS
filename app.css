@@ -1,0 +1,196 @@
+:root {
+    background-color: lightgray;
+    font-size: 75%; /* mikrh gammatoseira genika ola */
+}
+
+*{
+    box-sizing: border-box; 
+   /* font-family: Arial, Helvetica, sans-serif; */
+    color: #333;
+    margin: 8px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.icon-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    padding: 8px 10px;
+    background:  rgb(99, 133, 116);
+    font-size: 2.5em;
+    
+   /* display: flex; 
+    justify-content: center;
+    align-items: center;
+   */
+
+    border-radius: 50px;
+    cursor: pointer;
+    /*z-index: 1; */
+}
+
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+
+/*
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+*/
+
+
+h1 { /* Animal Quiz title */
+
+    font-size: 4rem;
+    color: rgb(43, 107, 75); 
+    margin-bottom: 3rem;
+    margin-top: 5%;
+}
+
+
+/*
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+*/
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 650;
+}
+
+
+h3{
+   font-size: 1.4rem;
+   /* font-weight: 500; */
+    text-align: left;
+}
+
+
+/* UTILITIES */
+
+.container {  /* Ola ta paidia tou home sto kentro */
+    width: 100vw;
+    height: 100vh;
+        /* basika */
+    display: flex; /* paei olo to box sto kentro */
+    justify-content: center; /*kentro to keimeno */
+    align-items: center; /* an balw edw sto center -> start: tote olo to keimeno tha bei panw sto kentro tis selidas */
+         /* ews edw */
+    max-width: 80rem; 
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* any child of my container */
+.container > * {
+    width: 100%;
+}
+
+/* ta paei ta btn apo katw to ena apo to allo */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* kentro btn*/
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*
+.hidden {
+    display: none;
+}
+*/
+
+/* BUTTONS */
+.btn { /* looking like button */
+    font-size: 1.8rem;
+   /* padding: 1rem 0; */
+    width: 15rem;
+    height: 45px;
+    text-align: center;
+    border: 0.1rem solid  rgb(43, 107, 75);
+    border-radius: 20px; 
+    margin-bottom: 1rem;
+    text-decoration: none; /* delete the button line */
+    color:  rgb(43, 107, 75); /* text color */
+    background-color: rgb(99, 133, 116); /* bg text inside the btn color */
+}
+
+
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(43, 107, 75);  /* 0.5 diafano */
+    transform: translateY(-0.1rem); /* move this up a little */
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+
+
+/* FORMS */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgb(43, 107, 75); 
+}
+
+input::placeholder {
+    color: rgb(43, 107, 75); 
+}
+
+
+
+
+

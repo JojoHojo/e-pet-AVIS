@@ -1,0 +1,81 @@
+.choice-container { /* leuka border san grammes se ola ta div A/ Ch1 klp. */
+    display: flex;
+    margin-bottom: 0.1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    border: 0.1rem solid rgb(43, 107, 75); 
+    background-color: white;
+}
+
+/* idio efe me ta buttonn sthn arxh -> dld skies, kinisi klp */
+.choice-container:hover {
+    cursor: pointer;
+/* oi parakatw entoles ides me to btn:hover tou apps.css */
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(43, 107, 75);  /* 0.5 diafano */
+    transform: translateY(-0.1rem); /* move this up a little */
+    transition: transform 150ms;
+}
+
+
+
+/* gia to ble sumbolo sto a/b/c/d */
+.choice-prefix {
+    padding: 1.5rem /* buttom */ 2rem /* sides */;
+    background-color: rgb(43, 107, 75); 
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem; /* sto ketro tou white box pou eidame panw na bei to text */
+    width: 100%;
+}
+
+
+/* SCORE & QUESTION HEAD UP 
+    HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+
+
+
+/* Box under the start quiz btn */
+.wrap-start-menu {
+    margin: auto;
+    width: 30%;
+    height: 40%;
+   /* background: transparent; */
+    border: 2px solid rgb(43, 107, 75); 
+    border-radius: 10px;
+    text-align: center;
+   /* backdrop-filter: blur(45px); */
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    
+    
+   /*overflow: hidden;  
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease ;  */ /* an den theleis metabasi sto login sthn emfanisi (auth h mikri kinhsh apo makria) */ 
+}
+
+
+
+
+
+
+
+
+
+
+
