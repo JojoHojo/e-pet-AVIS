@@ -1,3 +1,5 @@
+
+/*
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
@@ -9,7 +11,7 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
+*/
 
 let questions = [
     { //1erwtisi
@@ -114,6 +116,8 @@ let questions = [
 
 ];
 
+
+/*
 fetch("questions.json").then(res => {
     console.log(res);
 })
@@ -126,7 +130,7 @@ const MAX_QUESTIONS = 3;
 
 startGame = () => {
     questionCounter = 0;
-    scor = 0;
+    score = 0;
     availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
@@ -169,7 +173,12 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswers = selectedChoice.dataset['number'];
 
-  
+        const classToApply = selectedAnswers == currentQuestion.answer ? "correct" : "incorrect";
+
+
+        if(classToApply == 'correct'){
+            incrementScore(CORRECT_BONUS);
+        }
 
         getNewQuestion();
     });
@@ -177,12 +186,12 @@ choices.forEach(choice => {
 })
 
 //oso afora to score: 
-/*
+
 incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
 };
-*/
+
 
 startGame();
 
@@ -193,3 +202,4 @@ startGame();
 
 
 
+*/
