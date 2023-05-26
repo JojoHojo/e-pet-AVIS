@@ -13,6 +13,8 @@ let questionCounter = 0;
 let availableQuestions = [];
 */
 
+
+
 let questions = [
     { //1erwtisi
         question: "Πόσο χρόνο πρόκειτε να έχετε διαθέσιμο για το κατοικιδιο σας;;", //erwtisi
