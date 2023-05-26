@@ -166,7 +166,6 @@ let questions = [
         answer: 2
   }
 
-    
 
   
 ];
