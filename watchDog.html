@@ -6,62 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="watch.css">
 </head>
 <body>
-
     <header>
         <h2 class="logo"><a href="secondPage.html"> Paws & Care </a></h2>
         <nav class="navigation">
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <button class="btnLogin-popup">Login</button>
+            <!--<a href="firstPage.html"><button class="btnLogin-popup"> Login </button></a>-->
         </nav>
     </header>
 
-
  <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <span class="icon-close"> <ion-icon name="close-outline"></ion-icon></span>
     <!-- HERE BELONG THE L/R BTN-->
 </div>
 
-
-    <!-- THE BOX  -->
-    <div class="wrap-contact">
-        <section class="contact" id="contact">
-            <h2 class="heading"> Βρήκες κάποιο ζωάκι στον δρόμο; Μπορείς να βοηθήσεις! </h2> <br>
-            <form action="">
-                <div class="inputBox">
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Second name">
-                    <input type="text" placeholder="phone">
-                </div>
-                <div class="inputBox">
-                    <input type="email" placeholder="email">
-                    <input type="email" placeholder="place">
-                    <input type="email" placeholder="tk">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="meassage"></textarea><br>
-                <a href="#" class="btn">Send</a>
-            </form>
-        </section>
+ <!-- DOG ONLY KARTELA -->
+ <div class="container">
+  
+    <div class="image">
+        <img src="./sk1.jpg" alt="dog1">
+        <div class="user-info">
+            <div class="name">Λίλα</div><br>
+            <div class="social-accounts">
+                <ul><b>
+                    <li>Θυληκο</li>
+                    <li>4 χρ.</li>
+                </b></ul>
+            </div>
+            <button>Δες επιπλέον</button>
+        </div>
+    </div>
+    <div class="image">
+        <img src="./sa.jpg" alt="dog">
+        <div class="user-info">
+            <div class="name">Χούτς</div><br>
+            <div class="social-accounts">
+                <ul><b>
+                    <li>Αρσενικό </li>
+                    <li>6 χρ</li>
+                </b></ul>
+            </div>
+            <button>Δες επιπλέον</button>
+        </div>
     </div>
 
+</div>
+<br><br>
 
-<!-- MENU -->
+	<!-- MENU -->
     <div class="container" id="container">
 		<div class="navbar">
 			<ul>
 				<li><a href="startGame.html"><ion-icon name="extension-puzzle-outline"></ion-icon><span>Quiz</span></a></li>
                 <li><a href="watch.html"><ion-icon name="eye-outline"></ion-icon><span>Watch</span></a></li>
-                <li><a href="#"><ion-icon name="search-outline"></ion-icon><span>Search</span></a></li>
+                <li><a href="search.html"><ion-icon name="search-outline"></ion-icon><span>Search</span></a></li>
 				<li><a href="#"><ion-icon name="construct-outline"></ion-icon><span>Work</span></a></li>
 				<li><a href="#"><ion-icon name="checkmark-circle-outline"></ion-icon><span>Availability</span></a></li>
+				<!--<li><a href="#"><ion-icon name="home-outline"></ion-icon><span>Find</span></a></li>-->
 			</ul>
 		</div>
 	</div>
-	
 
-   <!--<script src="1.js"></script>--> 
+    <!--<script src="1.js"></script>-->
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
